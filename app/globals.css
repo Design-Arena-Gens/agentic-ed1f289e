@@ -1,0 +1,29 @@
+* { box-sizing: border-box; }
+html, body { padding: 0; margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif; color: #0f172a; background: #f8fafc; }
+
+.container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+.header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.title { font-size: 22px; font-weight: 700; }
+
+.card { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+.grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+@media (min-width: 1024px) { .grid { grid-template-columns: 1.2fr 0.8fr; } }
+
+.controls { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.controls label { font-size: 12px; color: #334155; display: block; margin-bottom: 4px; }
+.inputRow { display: flex; gap: 8px; align-items: center; }
+.inputRow input[type="number"], .inputRow select { width: 100%; padding: 8px 10px; border: 1px solid #cbd5e1; border-radius: 8px; background: #f8fafc; }
+.rangeRow { display: grid; grid-template-columns: 80px 1fr 70px; gap: 8px; align-items: center; }
+.rangeRow input[type="range"] { width: 100%; }
+.small { font-size: 12px; color: #475569; }
+
+.sectionTitle { font-weight: 600; margin: 8px 0 6px; color: #0f172a; }
+.buttons { display: flex; gap: 10px; flex-wrap: wrap; }
+.button { padding: 10px 14px; border-radius: 10px; border: 1px solid #0ea5e9; background: #0ea5e9; color: white; font-weight: 600; cursor: pointer; }
+.button.secondary { background: white; color: #0ea5e9; }
+.button:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.canvasWrap { background: #f1f5f9; border: 1px dashed #cbd5e1; border-radius: 12px; padding: 10px; display: flex; justify-content: center; align-items: center; }
+.previewNote { color: #64748b; font-size: 12px; margin-top: 6px; }
+
+.kbd { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; background: #e2e8f0; border-radius: 6px; padding: 1px 6px; font-size: 11px; }
